@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: config
+  profiles:
+    active: native
+
+server:
+  port: 8888
+
+logging:
+  level:
+    com.dzinevich.config: debug
