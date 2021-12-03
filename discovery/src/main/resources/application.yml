@@ -1,6 +1,10 @@
 spring:
   application:
     name: discovery
+  security:
+    user:
+      name: netflix
+      password: eureka
 
 server:
   port: 8761

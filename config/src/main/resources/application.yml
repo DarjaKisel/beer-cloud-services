@@ -8,6 +8,10 @@ spring:
       server:
         native:
           search-locations: classpath:/config/{application}
+  security:
+    user:
+      name: MyUserName
+      password: MySecretPassword
 
 server:
   port: 8888
@@ -15,3 +19,12 @@ server:
 logging:
   level:
     com.dzinevich.config: debug
+
+#should be an env property
+encrypt:
+  key: MySuperSecretKey
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://netflix:eureka@localhost:8761/eureka
